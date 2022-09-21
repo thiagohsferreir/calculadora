@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <table border="2" width="400" align="center">
+        <tr>
+            <th colspan="4">Calculadora</th>
+        </tr>
+        <tr>
+            <td align="center" colspan=""> <p id="res">0</p></td>
+            <td align="center" colspan=""> <p id="ope"></p></td>
+            <td align="center" colspan=""> <p id="res2">0</p></td>
+            <td align="center "> <p id="resultado"></p></td>
+    
+        </tr>
+        <tr>
+            <td align="center"><input type="button" value="/" onclick="divisao()"></td>
+            <td align="center"><input type="button" value="*" onclick="multiplicacao()"></td>
+            <td align="center"><input type="button" value="-" onclick="menos()"></td>
+            <td align="center"><input type="button" value="+" onclick="mais()"></td>
+        </tr>
+        <tr>
+            <td align="center"><input type="button" value="7" onclick="sete()"></td>
+            <td align="center"><input type="button" value="8" onclick="oito()"'></td>
+            <td align="center"><input type="button" value="9" onclick="nove()" id="nove"></td>
+            <td align="center" rowspan="4"><input type="button" value="=" onclick="igual()"></td>
+        </tr>
+        <tr>
+            <td align="center"><input type="button" value="4" onclick="quatro()"></td>
+            <td align="center"><input type="button" value="5" onclick="cinco()"></td>
+            <td align="center"><input type="button" value="6" onclick="seis()"></td>
+        </tr>
+        <tr>
+            <td align="center"><input type="button" value="1" onclick="um()"></td>
+            <td align="center"><input type="button" value="2" onclick="dois()"></td>
+            <td align="center"><input type="button" value="3" onclick="tres()"></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3"><input type="button" value="0" onclick="zero()"></td>
+        </tr>
+    </table>
+    <div><input type="button" value="Limpar" onclick="limpar()"></div>
+    <script src="script.js"></script>
+</body>
+</html>
